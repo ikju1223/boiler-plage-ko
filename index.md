@@ -84,12 +84,50 @@ mongoose.connect(
 
     git status
 
-- Working Directory : 기본값
+- 1 Working Directory : 기본값
 
-    git add
-- Staging Area : 깃으로 이동전 대기장소
+    git add .
+- 2 Staging Area : 깃으로 이동전 대기장소
+
+    git commit -m "처음 저장소에 올림"
+- 3 Git repository : 깃 저장소
+
+    git push
+- 4 Git repository : 깃 허브
+
+
+16. 에러 / 수정시 필요 코드
+
+    git config --global core.autocrlf true
+- 윈도우 crlf 오류시 필요
 
     git rm --cached node_modules -r
 - Stagig Area에서 삭제
 
+    .gitgnore
+    
+    node_modules
+- 깃 설정 node_modules 은 올리지 않음 설정
 
+
+17. 깃
+- 소스 관리 프로그램
+
+18. 깃허브
+- 클라우드 서비스
+
+19. 깃허브 프로젝트 생성
+- github.com
+- 이후 나오는 커맨드 라인 사용
+```
+echo "# boiler-plage-ko" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ikju1223/boiler-plage-ko.git
+git push -u origin main
+```
+
+20. ssh 연결
+- 

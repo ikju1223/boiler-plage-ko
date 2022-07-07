@@ -36,5 +36,5 @@ const userSchema = mongoose.Schema({
 // 모델 생성
 const User = mongoose.model('User', userSchema);
 
-module.exports = {user}     // 외부 사용 허용
+module.exports = {User}     // 외부 사용 허용
 
